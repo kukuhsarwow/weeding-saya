@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8e4e9f3; /* Warna Pink Soft */
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh; /* Full layar */
+    background: url('jonathan-borba-VwBGK97upKk-unsplash.jpg') no-repeat center center/cover;
+    position: relative;
+}
+.hero-1{
+    height: 100vh;
+    background: url('Blue\ Watercolor\ Flower\ Page\ Border\ A4\ Document.png') no-repeat center center/cover;
+    position: relative;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay gelap */
+}
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Gaya untuk countdown */
+.countdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Gaya gambar pasangan */
+.couple-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya peta */
+.map-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulir RSVP */
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+button {
+    background: #ff758c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e84855;
+}
+
+/* Efek Animasi Scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.carousel-item img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
